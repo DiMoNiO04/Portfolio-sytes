@@ -407,9 +407,7 @@ textarea {
 
 
 /*Common styles start*/
-html {
-    scroll-behavior:smooth; 
-  }
+
 .container{
     max-width: 1200px; /*Максимальная ширина контейнера*/
     margin: 0 auto;    /*Выравнивание по центру*/
@@ -453,6 +451,7 @@ html {
     width: 100%;                 /*Ширина на весь экран*/
     z-index: 10;                 /*Слой*/
     background-color: #5b725f; /*Цвет*/
+    position: fixed;
 }
 .header-container{
     padding: 20px;                 /*Отступы внутренние*/
@@ -508,6 +507,7 @@ html {
 /*Section profile start*/
 .section-profile{
     align-items: center;
+    margin-top: 95px;
     display: flex;         
     flex-wrap: wrap;
     justify-content: space-around;       /*Равномерно распределение по ширине*/
