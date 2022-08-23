@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular-min.css" />
+  <link rel="stylesheet" href="css/style-min.css" />
+  <title>momentum</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="player visibly">
+      
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <button class="volume player-icon volume-active"></button>
+        <div class="progress-volume">
+          <div class="volume-progress hidden">
+            <div class="now-volume"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nameSong"></div>
+
+      <div class="progress">
+        <div class="progress-bar">
+          <div class="now"></div>
+        </div>
+        <div class="timeAudio">
+          <span class="start"></span> / <span class="end"></span>
+        </div>
+      </div>
+
+      <ul class="play-list"></ul>
+    </div>
+
+    <audio src="" controls="" class="audio"></audio>
+
+    <div class="weather visibly">
+      <div class="lng-city" contenteditable="true"></div>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="lng-weather-description"></span>
+      </div>
+      <div class="lng-wind"></div>
+      <div class="lng-humidity"></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time visibly"></time>
+    <date class="lng-date visibly"></date>
+    <div class="greeting-container">
+      <span class="lng-greeting"></span>
+      <input type="lng-text" placeholder="" class="name" />
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="change-quote-btn">
+      <button class="change-quote"></button>
+    </div>
+    <div class = 'quote visibly'>
+      <div class="lng-quote"></div>
+      <div class="lng-author"></div>
+    </div>
+
+    <div class="settings none">
+      <ul class="setting-ul">
+
+        <li class="setting-li">
+          <span class = 'setting-span'>Language:</span>
+          <select class="change-lang">
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+          </select>
+        </li>
+
+        <li class="setting-li">
+          <span class="setting-span">Time Format:</span>
+          <select class="change-time">
+            <option value="en-UA">24</option>
+            <option value="en-UK">12</option>
+          </select>
+        </li>
+
+        <li class="setting-li">
+          <span class="setting-span">Weather:</span>
+          <label class="switch">
+            <input type="checkbox" class = 'i-1' checked>
+            <span class="slider round"></span>
+          </label>
+        </li>
+
+        <li class="setting-li">
+          <span class="setting-span">Player:</span>
+          <label class="switch">
+            <input type="checkbox" class = 'i-2' checked>
+            <span class="slider round"></span>
+          </label>
+        </li>
+
+        <li class="setting-li">
+          <span class="setting-span">Date:</span>
+          <label class="switch">
+            <input type="checkbox" class = 'i-3' checked>
+            <span class="slider round"></span>
+          </label>
+        </li>
+
+        <li class="setting-li">
+          <span class="setting-span">Time:</span>
+          <label class="switch">
+            <input type="checkbox" class = 'i-4' checked>
+            <span class="slider round"></span>
+          </label>
+        </li>
+
+        <li class="setting-li">
+          <span class="setting-span">Quote:</span>
+          <label class="switch">
+            <input type="checkbox" class = 'i-5' checked>
+            <span class="slider round"></span>
+          </label>
+        </li>
+
+        <li class="setting-li">
+          <span class="setting-span">Greeting:</span>
+          <label class="switch">
+            <input type="checkbox" class = 'i-6' checked>
+            <span class="slider round"></span>
+          </label>
+        </li>
+
+        <li class="setting-li">
+          <span class="setting-span">To Do:</span>
+          <label class="switch">
+            <input type="checkbox" class = 'i-7' checked>
+            <span class="slider round"></span>
+          </label>
+        </li>
+
+        <li class="setting-li">
+          <span class="setting-span">Image Collection:</span>
+          <select class="change-image">
+            <option value="git">Git</option>
+            <option value="unp" class="unplash">Unplash</option>
+            <option value="flick" class="flick">Flick</option>
+          </select>
+          <input type="text" class = 'input-text hidden'>
+        </li>
+      </ul>
+      <button class="save-settings">Save</button>
+    </div>
+
+    <div class="todo_list none">
+      <h2 class="todo-title">ToDo List</h2>
+      <div class="create_new_todo">
+         <input type="text" placeholder="New Task" class="todo-item-input">
+         <button class="add-btn">Add</button>
+      </div>
+      <div class="wrapper">
+         <ul class="todo"></ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-footer">
+      <div class="settings-button">
+        <img src="./assets/svg/icons8-settings.svg" alt="settings" class="setting-icon">
+      </div>
+      <div class="for-me">
+        <div class="year">2022</div>
+        <div class="rsschool">
+          <a href="https://rs.school/js/" class="rsschool">
+            <img src="./assets/svg/rs_school_js.svg" alt="rsschool-logo">
+          </a>
+        </div>
+        <div class="github">
+          <a href="https://github.com/DiMoNiO04" class="github">
+            <img src="./assets/svg/igithub.svg" alt="github">
+          </a>
+        </div>
+      </div>
+      <div class="todo-logo visibly">
+        <img src="./assets/img/icons8-список-дел-50.png" alt="to-do" class="todo-icon">
+      </div>
+  </div>
+  </footer>
+
+  <script src="js/lang.js"></script>
+  <script type="module" src="js/index-min.js"></script>
+</body>
+</html>
