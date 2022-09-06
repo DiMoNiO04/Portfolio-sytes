@@ -6,5 +6,5 @@
 + [Syte: My-CV](https://dimonio04.github.io/Portfolio-sytes/My-CV)
 + [Syte: Travel](https://dimonio04.github.io/Portfolio-sytes/Travel)
 + [Momentum](https://dimonio04.github.io/Portfolio-sytes/Momentum)
-+ [Codejam](https://dimonio04.github.io/Portfolio-sytes/Codejam-eldritch)
++ [Codejam](https://dimonio04.github.io/Portfolio-sytes/Codejam)
 
