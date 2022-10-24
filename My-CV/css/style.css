@@ -639,6 +639,8 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     padding-right: 24px;
+	 width: 100%;
+    justify-content: space-between;
 }
 .github-link{
     color: #fff;
@@ -648,10 +650,6 @@ textarea {
     padding-left: 0;
     transform: scale(1.25);
     transition: 0.2s all linear;
-}
-.rsschool-logo:hover{
-    transform: scale(1.2);  /*При наведении лого увеличивается в размере*/
-    transition: 0.2s all;   /*Плавное изменение размера при наведении*/
 }
 .year{
     padding-right: 24px;  /*Внутренний правый отсуп от года в футере*/
