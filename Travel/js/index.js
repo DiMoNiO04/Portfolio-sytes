@@ -31,29 +31,15 @@ console.log('ПОПРОШУ ОБНОВИТЬ СТРАНИЦУ, ЕСЛИ ЕСТЬ
     const ACCOUNT_LINK = document.querySelector('.login-popup-mobile');
     const DARK_WRAPPER = document.querySelector('.dark-wrapper')
 
-    LOGIN_BUTTON.addEventListener('click', () => {
-        POPUP.classList.toggle('popup-hidden')
-        DARK_WRAPPER.classList.toggle('dark-wrapper-pop-noactive')
-    })
+	 const togglePopupDark = () => {
+		POPUP.classList.toggle('popup-hidden')
+      DARK_WRAPPER.classList.toggle('dark-wrapper-pop-noactive')
+	 }
 
-    POPUP.addEventListener('click', (event) => {
-        if(event.target.classList.contains('popup')){
-            POPUP.classList.toggle('popup-hidden');
-            DARK_WRAPPER.classList.toggle('dark-wrapper-pop-noactive')
-        }
-    })
-
-    ACCOUNT_LINK.addEventListener('click', () => {
-        POPUP.classList.toggle('popup-hidden')
-        DARK_WRAPPER.classList.toggle('dark-wrapper-pop-noactive')
-    })
-
-    ACCOUNT_LINK.addEventListener('click', (event) => {
-        if(event.target.classList.contains('popup')){
-            POPUP.classList.toggle('popup-hidden')
-            DARK_WRAPPER.classList.toggle('dark-wrapper-pop-noactive')
-        }
-    })
+    LOGIN_BUTTON.addEventListener('click', togglePopupDark)
+    POPUP.addEventListener('click', (event) => {if(event.target.classList.contains('popup')) togglePopupDark()})
+    ACCOUNT_LINK.addEventListener('click', togglePopupDark)
+    ACCOUNT_LINK.addEventListener('click', (event) => {if(event.target.classList.contains('popup')) togglePopupDark()})
 }());
 
 
