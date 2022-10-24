@@ -1,0 +1,531 @@
+.panda-donate{
+	background: url(../assets/images/panda_donate.jpg) no-repeat center;
+	background-size: cover;
+	height: 390px;
+}
+
+.donate{
+	background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.donate-container{
+	padding: 40px 0 180px 0;
+}
+
+.donate-title{
+	font: normal 400 36px/130% 'Roboto';
+	color: #FFFFFF;
+	margin: 0;
+}
+
+.donate-text{
+	font: normal 500 16px/22px 'Roboto';
+	color: #FFFFFF;
+	margin-top: 8px;
+}
+
+.donate-text span{
+	font: normal 400 16px/2px 'Roboto';
+	color: #FFFFFF;
+}
+
+.donate-info-title{
+	font: normal 400 36px/130% 'Roboto';
+	color: #FE9013;
+	margin-top: 45px;
+}
+
+.feed-pick-container{
+	padding: 40px 92px 62px 92px;
+	background: rgba(255, 255, 255, 0.52);
+	backdrop-filter: blur(2px);
+	border-radius: 20px;
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+}
+
+.donate-subtitle{
+	font: normal 400 48px/120% 'Roboto';
+	text-align: center;
+	color: #FE9013;
+	margin-left: -14px;
+}
+
+.pick-feed-text{
+	font: normal 400 24px/120% 'Roboto';
+	color: #333B41;
+	margin-top: 20px;
+}
+
+.panda-count{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+	margin-left: -14px;
+}
+
+.count{
+	position: relative;
+	top: 28px;
+}
+
+.multiplication{
+	margin: 0 64px 0 11px;
+	position: relative;
+	top: 16px;
+}
+
+.number{
+	font: normal 500 72px/80% 'Roboto';
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom: 11px;
+}
+
+.feed-pick-container span{
+	font: normal 400 15.9px/140% 'Roboto';
+	text-align: center;
+	color: #333B41;
+	margin: 0 auto;
+	display: block;
+}
+
+.amount{
+	font: normal 400 16px/140% 'Roboto';
+	color: #000000;
+}
+
+.donate-money{
+	margin-top: 48px;
+}
+
+.progress-container{
+	margin-top: 10px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 93px;
+}
+
+.progress{
+	background: #404950;
+	border-radius: 2px;
+	height: 27px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 8px 30px 9px 26px;
+	position: relative;
+}
+
+.progress-bar{
+	background: #72828E;
+	height: 2px;
+	width: 99.5%;
+	display: flex;
+	align-items: center;
+}
+
+.donate-links{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: absolute;
+	top: -6px;
+}
+
+.donate-link{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+.circle{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #FFEE2E;
+
+}
+.circl{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: -12px;
+}
+
+.money{
+	display: flex;
+	justify-content: space-between;
+	font: normal 500 26px/140% 'Roboto';
+	text-transform: uppercase;
+	color: #333B41;
+	margin-top: 8px;
+}
+
+.donate-link:hover .circl, .donate-link:hover .money{
+	cursor: pointer;
+}
+
+.money._active{
+	color: #FE9013;
+}
+
+.circl._active{
+	background: url(../assets/icons/roller_icon.svg) no-repeat center;
+	background-size: cover;
+}
+
+.custom-input:hover, .custom-nput:active, .custom-input:hover{
+	border: 1px solid #4B9200;
+}
+
+.input-donate:hover, .input-donate:active, .input-donate:focus{
+	color: #4B9200;
+}
+
+.form {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 10px;
+ }
+ 
+.custom-input {
+	position: relative;
+	width: 268px;
+	border: 1px solid #929699;
+	border-radius: 2px;
+	padding: 15px 10px;
+	margin: 0 auto;
+}
+
+.custom-input::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 10px;
+	margin: auto 0;
+	width: 10px;
+	height: 20px;
+	background: url('../assets/icons/dollar.svg') no-repeat center;
+}
+
+.input-donate{
+	background-color: transparent;
+	font: normal 400 16px/140% 'Roboto';
+	color: #929699;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.radio-inputs{
+	margin-top: 24px;
+	margin-left: -16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.radio-input{
+	display: flex;
+	align-items: center;
+	justify-self: center;
+}
+
+.radio-input:first-child{
+	margin-right: 50px;
+}
+
+.radio-input input{
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+}
+
+.radio-input label{
+	font: normal 400 16px/140% 'Roboto';
+	color: #333B41;
+}
+
+.button-donate{
+	display: block;
+	margin: 30px auto 30px auto;
+}
+
+#monthly, #once {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+ }
+
+ #monthly+label, #once+label {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+ }
+
+ #monthly+label::before,  #once+label::before {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid #FE9013;
+	border-radius: 50%;
+	margin-right: 10px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+ }
+
+ #monthly:checked+label::before,  #once:checked+label::before {
+	background: #4B9200;
+	border: 1px solid #4B9200;
+ }
+
+ #once+label:hover, #monthly+label:hover{
+	cursor: pointer;
+ }
+
+
+/*---------Media start--------*/
+ @media screen and (max-width: 1150px){
+
+	.panda-donate{
+		background-position-x: -180px;
+	}
+
+	.donate-container{
+		padding-bottom: 29px;
+	}
+
+	.donate-title{
+		width: 80%;
+	}
+
+	.donate-text{
+		margin-top: 30px;
+	}
+
+	.feed-pick-container{
+		margin-top: 40px;
+		padding: 19px 49px 46px 47px;
+	}
+
+	.pick-feed-text{
+		margin-top: 11px;
+	}
+
+	.donate-link:first-child{
+		display: none;
+	}
+
+	.money{
+		margin-top: 4px;
+	}
+
+	.donate-money{
+		margin: 48px 16px 0 17px;
+	}
+
+	.footer-list-donate{
+		margin-right: 75px;
+	}
+
+	.social-networks-donate{
+		margin-right: 192px;
+	}
+ }
+
+
+ @media screen and (max-width: 900px){
+
+	.panda-donate {
+		background-position-x: -320px;
+		height: 370px;
+	}
+
+	.donate-container{
+		padding: 30px 0 46px 0;
+	}
+
+	.donate-title{
+		font: normal 400 24px/120% 'Roboto';
+		width: auto;
+	}
+
+	.donate-text{
+		margin-top: 20px;
+	}
+
+	.donate-info-title{
+		margin-top: 30px;
+	}
+
+	.feed-pick-container{
+		margin-top: 30px;
+		padding: 30px 0;
+	}
+
+	.pick-feed-text{
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.panda-count{
+		margin-top: 50px;
+	}
+
+	.donate-money{
+		margin: 41px 0 0 0;
+	}
+
+	.donate-subtitle{
+		margin-left: 0;
+	}
+
+	.progress-container{
+		margin-top: 0;
+	}
+
+	.amount{
+		margin-left: 10px;
+	}
+
+	.mobile{
+		display: none;
+	}
+
+	.custom-input{
+		width: 180px;
+		padding: 9px 10px 9px 6px;
+	}
+
+	.radio-inputs{
+		margin-top: 30px;
+	}
+}
+
+
+@media screen and (max-width: 500px){
+	.panda-donate {
+		background-position-x: -150px;
+		height: 187px;
+		margin-top: 34px;
+	}
+
+	.donate-container{
+		padding-bottom: 20px;
+	}
+
+	.donate-info-title{
+		font-size: 24px;
+	}
+
+	.donate-subtitle {
+		margin-left: 0;
+		font-size: 24px;
+  }
+
+  .feed-pick-container {
+		padding: 20px 0;
+	}
+
+	.pick-feed-text{
+		font-size: 16px;
+		margin-top: 11px;
+	}
+
+	.panda-count{
+		margin: 10px 0 0 0;
+	}
+
+	.panda img{
+		width: 160px;
+	}
+
+	.multiplication{
+		width: 8px;
+		margin: 0 36px 0 6px;
+		top: 12px;
+	}
+
+	.number{
+		font-size: 40px;
+		margin-bottom: 0;
+	}
+
+	.count span{
+		font-size: 9px;
+	}
+
+	.count{
+		top: 20px;
+	}
+
+	.donate-money{
+		margin-top: 9px;
+	}
+
+	.amount{
+		margin-left: 0;
+	}
+
+	.progress{
+		height: 13px;
+		padding: 4px 18px;
+		top: -6px;
+	}
+
+	.circle{
+		width: 5px;
+		height: 5px;
+	}
+
+	.circl{
+		margin-left: 0;
+		width: 20px;
+		height: 20px;
+	}
+
+	.donate-links{
+		top: -4px;
+	}
+
+	.money{
+		font-size: 13px;
+		margin-top: 0;
+	}
+
+	.progress-container{
+		margin-bottom: 30px;
+	}
+
+	.radio-inputs{
+		margin-top: 25px;
+	}
+
+	.button-donate{
+		margin-top: 26px;
+	}
+}
+ /*-------Media end----------*/

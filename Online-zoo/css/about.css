@@ -1,0 +1,1145 @@
+.giant-panda{
+	background: url(../assets/images/giant-panda.jpg) no-repeat center;
+	background-size: cover;
+	position: relative;
+	margin-top: -80px;
+	height: 780px;
+}
+
+.orange-circle{
+	position: absolute;
+	width: 465px;
+	height: 465px;
+	left: calc(50% - 465px/2 + 239.5px);
+	top: 92px;
+	background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+	border-radius: 50%;
+}
+
+.giant-panda-text{
+	max-width: 500px;
+	top: 166px;
+	left: calc(50% - 500px/2 + 330px);
+	position: absolute;
+	font: normal 700 106.5px/75% 'Roboto';
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.yellow-text{
+	color: #FFEE2E;
+}
+
+.giant-panda-button{
+	position: absolute;
+	bottom: 100px;
+	left: calc(50% - 298px/2 + 332px);
+}
+
+.backstage{
+	position: relative;
+	margin-top: 140px;
+}
+
+.backstage-container{
+	display: flex;
+}
+
+.backstage-image{
+	object-fit: contain;
+}
+
+.backstage-text{
+	max-width: 100%;
+	margin-left: 87px;
+}
+
+.title-backstage{
+	font: normal 400 48px/120% 'Roboto';
+	color: #333B41;
+	margin-bottom: 20px;
+}
+
+.text-backstage{
+	font: normal 400 16px/22px 'Roboto';
+	color: #333B41;
+	max-width: 100%;
+}
+
+.subtitle-backstage{
+	font: normal 400 24px/120% 'Roboto';
+	color: #333B41;
+	margin: 54px 0 34px 0;
+}
+
+.flower{
+	position: absolute;
+	right: 0;
+	top: -123px;
+	z-index: -1;
+	background: url(../assets/images/flower_foto1.jpg) no-repeat center;
+	width: 204px;
+	height: 605px;
+}
+
+.animals{
+	background: url(../assets/images/strelitzia.jpg) 100% 100% no-repeat, url(../assets/images/palm.jpg) 0 100% no-repeat;
+	margin-top: 177px;
+	position: relative;
+	padding-bottom: 100px;
+}
+
+.animals-container, .slider-page.slider-page-active, .slider-page.slider-next-page{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	row-gap: 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.slider-page.slider-next-page{
+	position: absolute;
+	top: 0;
+	z-index: 10;
+}
+
+.slider-pages{
+	position: relative;
+	height: 100%;
+	display: flex;
+	overflow: hidden;
+}
+
+.slider-page{
+	display: none;
+	animation: 0.5s ease-in-out;
+}
+
+.animation-to-right{
+	animation-name:right;
+	animation-direction: reverse;
+}
+
+.animation-from-left{
+	animation-name:left;
+	animation-direction: reverse;
+}
+
+.animation-from-right{
+	animation-name:right;
+}
+
+.animation-to-left{
+	animation-name:left;
+}
+
+.animal-card{
+	border: 1px solid #FA6F32;
+	border-radius: 5px;
+	grid-column: span 2;
+	height: 426px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+.alligator{
+	display: none;
+}
+
+.description-animal-card{
+	padding: 0px 12px 14px 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.description-animal-text{
+	display: flex;
+	flex-direction: column;
+}
+
+.title-animal-cards{
+	font: normal 500 16px/130% 'Roboto';
+	text-transform: uppercase;
+}
+
+.text-animal-cards{
+	font: normal 300 15px/120% 'Roboto';
+}
+
+.arrow{
+	position: absolute;
+	top: calc(50% - 62px/2);
+	display: block;
+}
+
+.arrow-left{
+	left: -82px;
+}
+
+.arrow-right{
+	right: -82px;
+}
+
+.animal-card-image{
+	border-radius: 5px 5px 0 0 ;
+	width: 100%;
+	background-size: cover;
+	transition: 0.3s;
+   overflow: hidden;
+   display: inline-block;
+}
+
+.animal-cards-button{
+	margin: 80px auto 0 auto;
+	display: block;
+}
+
+.arrow:hover{
+	cursor: pointer;
+	transition: all linear 0.3s;
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+
+.arrows-green{
+	display: none;
+}
+
+.animal-card:hover .description-animal-text {
+	position: absolute;
+	bottom: 20%;
+	color: white;
+	z-index: 200;
+	transition: 0.5s;
+}
+
+.animal-card:hover .svg{
+	visibility: hidden;
+}
+
+.animal-card:hover{
+	background-color: #F9804B;
+}
+
+.animal-card-img{
+	transition: 1s;
+	display: block;
+}
+
+.animal-card:hover .animal-card-img{
+	filter: brightness(70%);
+	transform: scale(1.1);
+}
+
+.pick-feed{
+	background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+	opacity: 0.9;
+	padding: 69px 0 100px 0;
+	margin: 0 auto;
+}
+
+.pick-feed-container{
+	background: rgba(253, 253, 255, 0.52);
+	backdrop-filter: blur(2px);
+	border-radius: 20px;
+	padding: 41px 0 59px 0;
+}
+
+.title-pick-feed{
+	font: normal 400 48px/120% 'Roboto';
+	text-align: center;
+	color: #FE9013;
+}
+
+.first-p-pick-feed{
+	font: normal 400 24px/120% 'Roboto';
+	color: #333B41;
+}
+
+.second-p-pick-feed{
+	font: normal 500 16px/130% 'Roboto';
+	color: #333B41;
+	padding-top: 40px;
+}
+
+.third-p-pick-feed{
+	font: normal 400 16px/130% 'Roboto';
+	color: #333B41;
+	padding-top: 10px;
+	width: 82%;
+}
+
+.pick-fead-text{
+	margin: 30px 0px 60px 100px;
+}
+
+.title-how-works{
+	font: normal 400 36px/130% 'Roboto';
+	color: #333B41;
+	text-align: center;
+}
+
+.padding-container{
+	max-width: 1190px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.pick-feed-cards{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 40px 198px 62px 198px;
+}
+
+.pick-feed-cards-img{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.work-svg{
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #F9804B	;
+	width: 168px;
+	height: 168px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.work-svg-text{
+	margin-top: 30px;
+	font: normal 400 16px/140% 'Roboto';
+	color: #333B41;
+	width: 168px;
+}
+
+.feed-button{
+	display: block;
+	margin: 0 auto;
+}
+
+.arrow-black{
+	position: relative;
+	bottom: 42px;
+}
+
+.href-donate{
+	border-bottom: #F9804B;
+	color: #333B41;
+	text-decoration: underline #FE9013;;
+}
+
+.href-donate:hover{
+	color: #000000;
+	cursor: pointer;
+}
+
+.testimonials{
+	position: relative;
+	padding-bottom: 180px;
+	background: url(../assets/images/leav_foto.jpg) 100% 100%/250px 275px no-repeat;
+	background-position: right bottom 0px;
+	margin-top: 140px;
+}
+
+.testimonial-container{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 4000px;
+	position: relative;
+	padding: 0;
+}
+
+.title-testimonials{
+	font: normal 400 36px/130% 'Roboto';
+	text-align: center;
+	color: #333B41;
+	margin-bottom:47px;
+}
+
+.testimonials-cards{
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 22px;
+	transition: margin-left 0.7s;
+}
+
+.testimonial-card{
+	width: 268px;
+	border-radius: 20px;
+	margin-right: 30px;
+	padding: 1px;
+	background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.testimonial-card:last-child{
+	margin-right: 0;
+}
+
+.testimonial-card-container{
+	padding: 15px 15px 19px 16px;
+	width: 264px;
+	height: 391px;
+	display: flex;
+	flex-direction: column;
+	background-color: #F1F3F2;
+	border-radius: 20px;
+}
+
+.name{
+	font: normal 400 16px/120% 'Roboto';
+	color: #000000;	
+}
+
+.name-icon{
+	width: 37px;
+	height: 37px;
+	margin-right: 10px;
+}
+
+.location, .day, .testimonial-card-text{
+	font: normal 300 15px/120% 'Roboto';
+	color: #767474;
+}
+
+.ellips{
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #BDBDBD;
+	margin: 0 6px;
+}
+
+.title-img-testimonial-cards{
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.title-testimonial-cards{
+	display: flex;
+	flex-direction: column;
+}
+
+.location-day-container{
+	display: flex;
+	align-items: center;
+}
+
+.navbar {
+	width: 600px;
+	appearance: none;
+	margin: 0 auto;
+ }
+
+.navbar::-webkit-slider-runnable-track {
+	border-radius: 5px;
+	height: 10px;
+  	border: 1px solid orange;
+	background-color: #F1F3F2;
+ }
+
+ .navbar::-webkit-slider-thumb:hover {
+	opacity: 0.7;
+}
+
+.navbar::-webkit-slider-thumb:active {
+	transform: scale(1.1);
+}
+
+.navbar::-webkit-slider-thumb {
+	background-color: orange;
+	border: 1px solid orange;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 75px;
+	height: 6px;
+	-webkit-appearance: none;
+	margin-top: 1px;
+}
+
+.feedback-button{
+	margin-top: 30px;
+}
+
+
+/*------------------------Popup start-----------*/
+.popup{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.popup-container{
+	width: 320px;
+	height: 428px;
+	padding: 20px 36px 17px 17px;
+	border: 1px solid black;
+	background-color: white;
+	position: relative;
+}
+.popup-close{
+	width: 14px;
+	height: 14px;
+	display: block;
+	position: absolute;
+	top: 18px;
+	right: 12px;
+	cursor: pointer;
+}
+
+.pop-close-line{
+	display: block;
+	position: absolute;
+	width: 18px;
+	height: 2px;
+	background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+	border-radius: 16px;
+}
+
+.pop-close-line:first-child{
+	transform: rotate(45deg);
+}
+
+.pop-close-line:last-child{
+	transform: rotate(-45deg);
+}
+
+.popup-hidden{
+	display: none;
+}
+
+.popup .testimonial-card-container{
+	border: 2px solid orange;
+}
+/*------------------------Popup end--------------*/
+
+
+/*---------Media start--------*/
+@media screen and (max-width: 1440px){
+
+	.animals{
+		background: url(../assets/images/strelitzia.jpg) 100% 100%/23% 17% no-repeat, url(../assets/images/palm.jpg) 0 100%/18.25% 28.75% no-repeat;
+	}
+	.flower{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1350px){
+	.animals-container, .slider-page.slider-page-active, .slider-page.slider-next-page{
+		row-gap: 92px;
+	}
+
+	.arrow-left{
+		left: 322px;
+	}
+
+	.arrow-right{
+		right: 322px;
+	}
+}
+
+@media screen and (max-width: 1150px){
+
+	.orange-circle{
+		width: 367px;
+		height: 367px;
+		left: calc(50% - 367px/2 + 139.5px);
+		top: 69px;
+	}
+
+	.giant-panda{
+		height: 584px;
+	}
+
+	.giant-panda-text{
+		font-size: 85px;
+		top: 123px;
+		left: calc(50% - 400.25px/2 + 214.12px);
+		max-width: 400px;
+	}
+
+	.giant-panda-button{
+		bottom: 47px;
+		left: calc(50% - 298px/2 + 214px);
+	}
+
+	.backstage{
+		margin-top: 109px;
+	}
+
+	.backstage-image{
+		max-width: 455px;
+		max-height: 408px;
+		object-fit: cover;
+	}
+
+	.backstage-text {
+		margin: -9px auto 0 31px;
+  }
+
+	.animals{
+		margin-top: 142px;
+		padding-bottom: 140px;
+	}
+
+	.animal-card{
+		height: 354px;
+	}
+
+	.animal-card-img{
+		max-width: 294px;
+	}
+
+	.pick-feed{
+		padding: 30px 0 50px 0;
+	}
+
+	.pick-feed-container{
+		padding: 30px 0 50px 0;
+	}
+
+	.pick-fead-text{
+		margin: 20px 48px 40px 48px;
+	}
+
+	.second-p-pick-feed{
+		padding-top: 20px;
+		width: 813px;
+	}
+
+	.third-p-pick-feed{
+		width: 100%;
+	}
+
+	.pick-feed-cards{
+		margin: 40px 88px 73px 88px;
+	}
+
+	.testimonials{
+		padding-bottom: 140px;
+		background: url(../assets/images/leav_foto.jpg) 100% 100%/200px 240px no-repeat;
+		margin-top: 100px;
+	}
+
+	.padding-container{
+		padding: 0 30px;
+	}
+
+	.title-testimonials{
+		margin-bottom: 30px;
+	}
+
+	.testimonial-cards{
+		margin-bottom: 20px;
+	}
+
+	.testimonial-card:last-child{
+		display: none;
+	}
+
+	.testimonial-card{
+		width: 293px;
+		height: 391px;
+	}
+
+	.testimonial-card-container{
+		height: 388px;
+		width: 291px;
+		padding: 14px 15px 10px 12px;
+	}
+
+	.testimonial-card-text{
+		padding-left: 6px;
+		overflow: hidden;
+	}
+
+	.navbar{
+		width: 390px;
+	}
+
+	.navbar::-webkit-slider-thumb{
+		width: 50px;
+	}
+
+	.feedback-button{
+		margin-top: 52px;
+	}
+
+	.social-networks{
+		margin-right: 179px;
+	}
+
+	.animals{
+		background: url(../assets/images/strelitzia-1000.jpg) 100% 100%/240px 180px no-repeat, url(../assets/images/palm-1000.jpg) 0 100%/193px 201px no-repeat;
+  	}
+
+	.testimonials-cards{
+		margin-bottom: 20px;
+	}
+
+	.feedback-button{
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 980px){
+	
+	.backstage{
+		margin-top: 60px;
+  	}
+
+  .backstage-text{
+		max-width: 81%;
+  	}
+
+	.text-backstage{
+		max-width: 90%;
+	}
+
+	.backstage-image{
+		display: none;
+	}
+
+  .subtitle-backstage{
+		margin: 30px 0 20px 0;
+  	}
+
+  .title-backstage, .subtitle-backstage{
+		position: relative;
+		left: 4px;
+  	}
+
+  .flower{
+		display: block;
+		background: url(../assets/images/flower_foto-640.jpg) no-repeat center;
+		width: 131px;
+  }
+
+  .animals-container, .slider-pages ,.slider-page.slider-page-active, .slider-page.slider-next-page {
+		height: 800px;
+		width: 100%;
+		row-gap: 92px;
+		column-gap: 30px;
+		justify-content: center;
+	}
+}
+
+
+@media screen and (max-width: 910px){
+
+  .animals{
+		margin-top: 80px;
+		padding-bottom: 100px;
+		background: url(../assets/images/strelitzia-1000.jpg) 100% 100%/175px 131px no-repeat, url(../assets/images/palm.jpg) 0 100%/137px 201px no-repeat;
+  }
+
+  .animal-card{
+		height: 332px;
+		grid-column: span 2;
+		max-width: 285px;
+  }
+
+  .animal-card-image, .animal-card-img{
+		height: 283px;
+  }
+
+  	.description-animal-card{
+		padding: 0 9px 10px 12px;
+	}
+
+	.title-animal-cards{
+		font-size: 12.5px;
+	}
+
+	.text-animal-cards {
+		font: normal 400 11.5px/100% 'Roboto';
+	}
+
+  .banana-svg{
+		width: 26px;
+  }
+
+  .meat-svg{
+	width: 37px;
+  }
+
+  .arrow-left{
+		left: calc(50% - 200px/2 + 23px);
+		margin-top: -5px;
+  }
+
+  .arrow-right{
+		right: calc(50% - 200px/2 + 23px);
+		margin-top: -5px;
+  }
+
+  .animal-cards-button{
+		margin-top: 60px;
+  }
+  
+  .pick-feed{
+		padding: 20px 0;
+  }
+
+  .pick-feed-container{
+		padding: 10px 20px 60px 20px;
+  }
+
+  .title-pick-feed{
+	font-size: 42px;
+  }
+
+  .pick-fead-text{
+		margin: 20px 0 30px 0;
+  }
+
+  .first-p-pick-feed {
+		font-size: 22px;
+  }
+
+  .second-p-pick-feed {
+		width: auto;
+  }
+
+  .padding-container{
+		padding: 0;
+  }
+
+  .pick-feed-cards{
+		margin: 20px 12px 40px 0;
+  }
+
+  .testimonials{
+		padding-bottom: 80px;
+		background: url(../assets/images/leav_foto.jpg) 100% 100%/110px 133px no-repeat;
+		margin-top: 60px;
+	}
+
+	.testimonials-cards{
+		flex-direction: column;
+		margin-bottom: 0;
+		overflow: hidden;
+		height: 372px;
+		overflow-y: scroll;
+	}
+
+	.testimonial-card{
+		width: 100%;
+		height: 109px;
+		margin-bottom: 15px;
+	}
+
+	.testimonial-card:last-child{
+		margin-bottom: 0;
+	}
+
+	.testimonial-card-container{
+		height: 100%;
+		width: 100%;
+	}
+
+	.navbar{
+		display: none;
+	}
+
+	.feedback-button{
+		margin: 25px auto 0 auto;
+		max-width: 240px;
+	}
+
+	.animals-container, .slider-pages ,.slider-page.slider-page-active, .slider-page.slider-next-page {
+		height: 757px;
+	}
+}
+
+
+@media screen and (max-width: 810px){
+
+	.giant-panda{
+		height: 420px;
+		margin-top: 0;
+	}
+
+	.giant-panda-text{
+		font-size: 54px;
+		max-width: 256px;
+		left: calc(50% - 255.64px/2 + 176.76px);
+	}
+
+	.orange-circle{
+		max-width: 238px;
+		max-height: 238px;
+		left: calc(50% - 237.6px/2 + 130.44px);
+	}
+
+	.backstage-text{
+		margin: 0;
+	}
+
+	.giant-panda-button {
+		bottom: 40px;
+		left: 20px;
+  }
+
+	.animal-card-img{
+		width: 100%;
+	}
+
+	.text-backstage{
+		max-width: 100%;
+	}
+
+	.arrows-green{
+		display: block;
+		position: relative;
+  }
+
+  .arrow-green-first{
+		position: absolute;
+		left: calc(50% - 63.12px/2 - 130px);
+		top: 3px;
+  }
+
+  .arrow-green-second{
+		position: absolute;
+		left: calc(50% - 63.12px/2 + 76px);
+		top: 3px;
+  }
+
+  .arrow-black{
+		display: none;
+  }
+}
+
+@media screen and (max-width: 639px){
+	.giant-panda{
+		margin-top: 0px;
+		height: 373px;
+	}
+
+	.orange-circle{
+		top: 44px;
+	}
+
+	.giant-panda-text{
+		top: 84px;
+	}
+
+	.animals-container, .slider-pages ,.slider-page.slider-page-active, .slider-page.slider-next-page {
+		height: 1418px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		row-gap: 30px;
+  	}
+
+	.arrow{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 620px){
+
+	.giant-panda{
+		height: 300px;
+	}
+	.orange-circle{
+		max-width: 160px;
+		height: 160px;
+	}
+
+	.giant-panda-text{
+		font-size: 32px;
+		max-width: 170px;
+	}
+
+	.pick-feed-cards-img{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.pick-feed-cards{
+		margin-right: 0;
+	}
+
+	.work-svg-text{
+		margin: 10px 0 0 0;
+	}
+
+	.pick-feed-card:first-child{
+		margin-bottom: 40px;
+	}
+
+	.pick-feed-card{
+		margin-bottom: 29px;
+	}
+
+	.pick-feed-card:last-child{
+		margin-bottom: 0;
+	}
+
+	.arrow-green-first{
+		left: calc(50% - 63.12px/2 + 89px);
+		transform: rotate(90deg);
+		top: 212px;
+	}
+
+	.arrow-green-second{
+		left: calc(50% - 63.12px/2 + 89px);
+		transform: rotate(90deg);
+		top: 460px;
+	}
+}
+
+
+@media screen and (max-width: 450px){
+
+	.giant-panda-button{
+		position: relative;
+		left: 0;
+		top: 207px;
+	}
+
+	.title-backstage{
+		font: normal 400 24px/120% 'Roboto';
+		left: 0;
+		margin: 0 0 10px 0;
+	}
+
+	.subtitle-backstage{
+		margin: 18px 0 9px -2px;
+	}
+
+	.flower{
+		background: url(../assets/images/flower_foto1-320.jpg) 100% 100%/35px 207px no-repeat;
+   	width: 105px;
+    	height: 217px;
+		top: -70px;
+	}
+
+	.animals{
+		margin-top: 40px;
+		padding-bottom: 60px;
+		background: url(../assets/images/strelitzia-320.jpg) 100% 100%/66px 63px no-repeat, url(../assets/images/palm_foto-320.jpg) 0 100%/58px 70px no-repeat;
+	}
+
+	.animal-card{
+		margin: 0 auto;
+	}
+
+	.animal-cards-button{
+		margin-top: 20px;
+	}
+
+	.padding-container{
+		padding: 0 10px;
+	}
+
+	.pick-feed-container{
+		padding: 20px 0 40px 0;
+	}
+
+	.title-pick-feed {
+		font-size: 24px;
+  }
+
+  .pick-fead-text{
+		margin: 10px 0 20px 0;
+  }
+
+  .second-p-pick-feed, .third-p-pick-feed{
+		display: none;
+  }
+
+  .first-p-pick-feed {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.title-how-works{
+		font-size: 24px;
+	}
+
+	.testimonials{
+		margin-top: 30px;
+		padding-bottom: 60px;
+		background: url(../assets/images/leav_foto.jpg) 100% 100%/60px 65px no-repeat;
+	}
+
+	.title-testimonials{
+		font-size: 24px;
+		margin-bottom: 16px;
+	}
+
+	.testimonial-card-container{
+		padding-top: 12px;
+	}
+
+	.name-icon{
+		margin-right: 6px;
+	}
+
+	.feedback-button{
+		margin: 15px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 390px){
+		
+	.giant-panda{
+		height: 187px;
+		margin-top: 34px;
+	}
+
+	.backstage{
+		margin-top: 104px;
+	}
+
+	.orange-circle{
+		width: 119px;
+		height: 119px;
+		left: calc(50% - 119.09px/2 + 62.45px);
+		top: 22px;
+	}
+
+	.giant-panda-text{
+		font-size: 28px;
+		left: calc(50% - 128.13px/2 + 85.67px);
+		width: 128px;
+		top: 41px;
+	}
+
+	.backstage-text{
+		max-width: 100%;
+	}
+}
+/*-------Media end---------*/
+
+/*---------Keyframes----------*/
+@keyframes left{
+	from{left:0;}
+	to{left:-100%;}
+}
+@keyframes right{
+	from{left:100%;}
+	to{left:0;}
+}
+/*-----------------------------*/
