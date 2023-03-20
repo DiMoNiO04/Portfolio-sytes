@@ -8,5 +8,5 @@
 + [Momentum](https://dimonio04.github.io/Portfolio-sytes/Momentum)
 + [Codejam](https://dimonio04.github.io/Portfolio-sytes/Codejam-eldritch)
 + [Syte: Online-zoo](https://dimonio04.github.io/Portfolio-sytes/Online-zoo)
-+ [Syte: GitHub API Repositories](https://dimonio04.github.io/Portfolio-sytes/GitHub API Repositories)
-
++ [Syte: Online-zoo](https://dimonio04.github.io/Portfolio-sytes/GitHub-API-Repositories)
++ [Syte: CSS-Bayan](https://dimonio04.github.io/Portfolio-sytes/CSS-Bayan)
